@@ -60,4 +60,8 @@ public class WikiRevision {
     public String getAuthorId() {
         return authorId;
     }
+
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
+    }
 }
