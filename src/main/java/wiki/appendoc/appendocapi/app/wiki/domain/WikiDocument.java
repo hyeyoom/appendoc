@@ -18,6 +18,15 @@ public class WikiDocument {
         this.revisions = revisions;
     }
 
+    public static WikiDocument from(
+            WikiDocumentId wikiDocumentId,
+            String title,
+            LocalDateTime createdDate,
+            List<WikiRevision> revisions
+    ) {
+        return new WikiDocument(wikiDocumentId, title, createdDate, revisions);
+    }
+
     public static WikiDocument createNewDocument(
             String title,
             String content,

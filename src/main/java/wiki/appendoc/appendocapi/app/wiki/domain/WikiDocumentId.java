@@ -1,7 +1,10 @@
 package wiki.appendoc.appendocapi.app.wiki.domain;
 
+import lombok.Getter;
+
 import java.util.UUID;
 
+@Getter
 public class WikiDocumentId {
     private final String value;
 
@@ -13,7 +16,7 @@ public class WikiDocumentId {
         return new WikiDocumentId(UUID.randomUUID().toString());
     }
 
-    public String getValue() {
-        return value;
+    public static WikiDocumentId of(String value) {
+        return new WikiDocumentId(value);
     }
 }

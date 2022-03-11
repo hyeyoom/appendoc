@@ -1,8 +1,10 @@
 package wiki.appendoc.appendocapi.app.wiki.domain;
 
+import lombok.Getter;
+
 import java.time.LocalDateTime;
 
-
+@Getter
 public class WikiRevision {
 
     /**
@@ -51,17 +53,5 @@ public class WikiRevision {
                 createdDate,
                 authorId
         );
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public String getAuthorId() {
-        return authorId;
-    }
-
-    public LocalDateTime getCreatedDate() {
-        return createdDate;
     }
 }

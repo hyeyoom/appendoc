@@ -1,10 +1,12 @@
 package wiki.appendoc.appendocapi.app.wiki.application;
 
+import org.springframework.stereotype.Service;
 import wiki.appendoc.appendocapi.app.wiki.application.dto.ReadDocumentQuery;
 import wiki.appendoc.appendocapi.app.wiki.application.dto.ReadDocumentQueryResult;
 import wiki.appendoc.appendocapi.app.wiki.domain.WikiDocument;
 import wiki.appendoc.appendocapi.app.wiki.domain.WikiDocumentDomainRepository;
 
+@Service
 public class QueryDocumentServiceImpl implements QueryDocumentService {
 
     private final WikiDocumentDomainRepository repository;
