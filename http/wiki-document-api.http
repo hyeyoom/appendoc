@@ -1,0 +1,11 @@
+### Write a document
+POST http://localhost:8080/wiki
+Content-Type: application/json
+
+{
+  "title": "AppendocWiki",
+  "content": "위키위키"
+}
+
+### Read the document
+GET http://localhost:8080/wiki/AppendocWiki
